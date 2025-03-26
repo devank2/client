@@ -3,7 +3,7 @@ export interface ExcelData {
   username: string;
   website: string;
   deposit: number;
-  referencee: string;
+  reference: string;
   _id?: string; 
 }
 

@@ -36,6 +36,7 @@ export const Admin: React.FC = () => {
           
           const formattedUsers: ApprovedUser[] = res.data.map((user): ApprovedUser => ({
             ...user,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             parent: user.parent || (user as any).parent || "N/A",
             totalDeposit: user.totalDeposit || 0,
             status: "Approved"

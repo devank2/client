@@ -47,12 +47,13 @@ const ExcelUpload: React.FC<Props> = ({ onUpload }) => {
       const username = String(row.username || row.Username || "Unknown");
       const website = String(row.website || row.Website || "Unknown");
       const deposit = Number(row.totalDeposit) || 0;
-      const referencee = String(row.referencee || row.Referencee || "Unknown");
+      const reference = String(row.reference || row.Reference || "Unknown");
+      console.log(reference, row, "checking rows and reference")
       return {
         username,
         website,
         deposit,
-        referencee,
+        reference,
         // Omit _id if your backend generates it
         // Or include if needed:
         // _id: String(row._id || Math.random().toString(36).substring(2, 9))
