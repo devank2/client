@@ -29,7 +29,7 @@ const ReferralRequestsTable: React.FC<Props> = ({ referralRequests, onApprove, o
           <tr className="bg-gray-100">
             <th className="p-3">Username</th>
             <th className="p-3">Website</th>
-            <th className="p-3">Referencee</th>
+            <th className="p-3">Reference</th>
             <th className="p-3">Action</th>
           </tr>
         </thead>

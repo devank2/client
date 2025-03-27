@@ -16,6 +16,7 @@ const ExcelUpload: React.FC<Props> = ({ onUpload }) => {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
+      alert("Uploading, please wait...");
       const data = await readFile(file);
       const workbook = XLSX.read(data, { type: "array" });
       const parsedData = parseExcel(workbook);
