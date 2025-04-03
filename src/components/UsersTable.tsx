@@ -28,7 +28,7 @@ const UsersTable: React.FC<Props> = ({ approvedUsers }) => {
           <tr className="bg-gray-100">
             <th className="p-3">Username</th>
             <th className="p-3">Website</th>
-            <th className="p-3">Referencee</th>
+            <th className="p-3">Reference</th>
             <th className="p-3">Total Deposit</th>
             <th className="p-3">Status</th>
           </tr>
